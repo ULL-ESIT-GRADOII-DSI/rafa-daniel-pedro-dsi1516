@@ -24,11 +24,11 @@ echo "Eliminando index.html antiguo e imágenes"
 rm -f index.html
 rm -rf images
 
-echo "Generando html"
-pandoc -s -o index.html ../index.md -c style.css
-
 echo "Copiando imagenes"
-cp -R ../images .
+cp -R "../images" .
+
+echo "Generando html"
+pandoc ../index.md -o index.html --template template.html --css template.css --self-contained --toc --toc-depth 2
 
 echo "Añadiendo al stage"
 git add .
