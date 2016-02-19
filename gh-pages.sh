@@ -20,14 +20,18 @@ else
 	git checkout gh-pages
 fi
 
-echo "Eliminando ficheros antiguos"
-rm -rf *
+echo "Eliminando index.html antiguo e imágenes"
+rm -f index.html
+rm -rf images
 
 echo "Generando html"
-pandoc -s -o index.html ../index.md
+pandoc -s -o index.html ../index.md -c style.css
 
 echo "Copiando imagenes"
 cp -R ../images .
+
+echo "Copiando hoja de estilos"
+cp ../style.css .
 
 echo "Añadiendo al stage"
 git add .
@@ -39,7 +43,7 @@ echo "Enviando cambios"
 git push origin gh-pages
 
 echo "Saliendo del directorio"
-#cd ..
+cd ..
 
-echo "Eliminando"
-#rm -rf tmp
+echo "Eliminando directorio temporal"
+rm -rf tmp
