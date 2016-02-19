@@ -8,7 +8,8 @@
   2. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
 4. [Instalar Atom](#instalar-atom)
 5. [Cloud9 IDE](#cloud9-ide)
-5. [Instalar Pandoc](#instalar-pandoc)
+6. [Instalar Pandoc](#instalar-pandoc)
+7. [Referencias](#referencias)
 
 ## Instalar Git
 En Ubuntu, se puede instalar Git usando apt
@@ -113,3 +114,15 @@ Ahora, sólo nos queda generar el fichero HTML con el siguiente comando:
     pandoc fichero.md
 
 A pandoc se le puede pasar como parámetro un template, y he usado un tempalate de bootstrap hecho por "[tonyblundell](https://github.com/tonyblundell/pandoc-bootstrap-template)". El resultado de la conversión a HTML se puede ver en el siguiente [enlace](http://danielramosacosta.github.io/rafa-daniel-pedro-dsi1516/).
+
+## Referencias
+
+Las definiciones están sacadas de la Wikipedia.
+
+* [Node.js](https://es.wikipedia.org/wiki/Node.js)
+* [Express.js](https://en.wikipedia.org/wiki/Express.js)
+* [Atom](https://en.wikipedia.org/wiki/Atom_(text_editor))
+* [Cloud9 IDE](https://en.wikipedia.org/wiki/Cloud9_IDE)
+* [Pandoc](https://en.wikipedia.org/wiki/Pandoc)
+
+El template de Pandoc es de [tonyblundell](https://github.com/tonyblundell) y se puede encontrar en [tonyblundell/pandoc-bootstrap-template](https://github.com/tonyblundell/pandoc-bootstrap-template).
