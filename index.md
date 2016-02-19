@@ -7,7 +7,8 @@
   1. [Instalar el generador de Express](#instalar-el-generador-de-express)
   2. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
 4. [Instalar Atom](#instalar-atom)
-5. [Cloud9 IDE](#cloud9-IDE)
+5. [Cloud9 IDE](#cloud9-ide)
+5. [Instalar Pandoc](#instalar-pandoc)
 
 ## Instalar Git
 En Ubuntu, se puede instalar Git usando apt
@@ -84,7 +85,7 @@ Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) d
 
 ![](images/atom.png)
 
-# Cloud9 IDE
+## Cloud9 IDE
 > Cloud9 IDE es un software gratuito online integrado con un entorno de desarrollo. Sporta distintos lenguajes de prgramaión, como PHP, Ruby, Perl, Python, Javascript con Node.js y Go.
 
 ![](images/cloud9.png)
