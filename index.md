@@ -88,7 +88,15 @@ Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) d
 ## Cloud9 IDE
 > Cloud9 IDE es un software gratuito online integrado con un entorno de desarrollo. Sporta distintos lenguajes de prgramaión, como PHP, Ruby, Perl, Python, Javascript con Node.js y Go.
 
-![](images/cloud9.png)
+En el fondo, Cloud9 trabaja con máquinas virtuales, y cuando creamos un nuevo workspace estamos creando una instancia de máquina virtual configurada con un ambiente que le indiquemos (por ejemplo, para desarrollar en RoR).
+
+Para crear un workspace, hacemos click en el botoón de nuestro perfil y configuramos nuestro workspace a nuestro gusto:
+
+![](images/c9-nuevo.png)
+
+Y cuando termine el arranque, nos aparecerá el IDE.
+
+![](images/c9-ide.png)
 
 ## Instalar Pandoc
 > Pandoc es una herramienta gratuita y de código abierto que nos permite convertir un lenguaje de marcas (Como Markdown o LaTeX) a otro.
@@ -102,6 +110,6 @@ Accedemos al los [releases](https://github.com/jgm/pandoc/releases) del proyecto
 
 Ahora, sólo nos queda generar el fichero HTML con el siguiente comando:
 
-    pandoc -s -o index.html
+    pandoc fichero.md
 
-El resultado se puede ver en la rama gh-pages de este repositorio
+A pandoc se le puede pasar como parámetro un template, y he usado un tempalate de bootstrap hecho por "[tonyblundell](https://github.com/tonyblundell/pandoc-bootstrap-template)". El resultado de la conversión a HTML se puede ver en el siguiente [enlace](http://danielramosacosta.github.io/rafa-daniel-pedro-dsi1516/).
