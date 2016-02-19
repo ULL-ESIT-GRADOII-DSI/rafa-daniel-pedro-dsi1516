@@ -65,7 +65,7 @@ Instalar el generador sólo requiere de un único comando.
 
 En este punto ya tendremos el generador instalado, por lo que si queremos generar un nuevo proyecto, lo hacemos con el siguiente comando:
 
-    express mi-app TODO
+    express mi-app
 
 ![](images/express-gen.png)
 
