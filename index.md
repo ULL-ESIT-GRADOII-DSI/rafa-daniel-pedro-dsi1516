@@ -3,8 +3,8 @@
 ## Tabla de Contenido
 1. [Instalar NodeJS](#instalar-nodejs)
 2. [Instalar Express](#instalar-express)
-  a. [Instalar el generador de Express](#instalar-el-generador-de-express)
-  b. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
+  1. [Instalar el generador de Express](#instalar-el-generador-de-express)
+  2. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
 3. [Instalar Atom](#instalar-atom)
 4. [Cloud9 IDE](#cloud9-IDE)
 
