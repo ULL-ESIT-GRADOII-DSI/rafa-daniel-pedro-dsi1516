@@ -49,7 +49,7 @@ Es por esta razón que al final he decidido descargar el código fuente y compil
 
 Captura de pantalla con node y npm instalados:
 
-TODO
+![](images/node-npm.png)
 
 ## Instalar Express
 > Express.js es un framwork para servidores Node.js, diseñado para construir aplicaciones de una página, multiágina, e híbridas.
@@ -66,7 +66,7 @@ En este punto ya tendremos el generador instalado, por lo que si queremos genera
 
     express mi-app TODO
 
-TODO: captura generando un proyecto con express
+![](images/express-gen.png)
 
 ### Instalar Express en nuestro proyecto
 Instalar express con npm es muy sencillo, sólo tenemos que acceder al directorio de nuestro proyecto y ejecutar el siguiente comando:
@@ -75,19 +75,19 @@ Instalar express con npm es muy sencillo, sólo tenemos que acceder al directori
 
 El parámetro `--save-dev` añade Express como dependencia del proyecto en el fichero `package.json`, así que si alguien clona nuestro proyecto, al hacer `npm install` express también se instalará.
 
-Todo: instalando express en un proyecto ya iniciado
+![](images/express-inst.png)
 
 ## Instalar Atom
 > Atom es un editor de texto de código abierto para OS X, Linux y WIndows con soporte para plugins escritos en Node.js, con un control de Git embebido y desarrollado por Github.
 
 Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) desde la [página de Atom](https://atom.io/) e instalarlo con el administrador de paquetes de Ubuntu.
 
-TODO: Captura de Atom
+![](images/atom.png)
 
 # Cloud9 IDE
 > Cloud9 IDE es un software gratuito online integrado con un entorno de desarrollo. Sporta distintos lenguajes de prgramaión, como PHP, Ruby, Perl, Python, Javascript con Node.js y Go.
 
-TODO: Captura de Cloud9
+![](images/cloud9.png)
 
 ## Instalar Pandoc
 > Pandoc es una herramienta gratuita y de código abierto que nos permite convertir un lenguaje de marcas (Como Markdown o LaTeX) a otro.
@@ -98,3 +98,7 @@ Accedemos al los [releases](https://github.com/jgm/pandoc/releases) del proyecto
     pandoc 1.16.0.2
     Compiled with texmath 0.8.4.1, highlighting-kate 0.6.1.
     [...]
+
+Ahora, sólo nos queda generar el fichero HTML con el siguiente comando:
+
+    pandoc -s -o index.html
