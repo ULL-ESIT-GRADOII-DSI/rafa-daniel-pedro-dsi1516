@@ -1,8 +1,12 @@
 # Tutorial las Tareas Iniciales
 
-# Table of Contents
+## Tabla de Contenido
 1. [Instalar NodeJS](#instalar-nodejs)
 2. [Instalar Express](#instalar-express)
+  a. [Instalar el generador de Express](#instalar-el-generador-de-express)
+  b. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
+3. [Instalar Atom](#instalar-atom)
+4. [Cloud9 IDE](#cloud9-IDE)
 
 ## Instalar NodeJS
 > Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.
@@ -74,5 +78,5 @@ Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) d
 
 TODO: Captura de Atom
 
-# Cloud9
+# Cloud9 IDE
 > TODO: terminar esto
