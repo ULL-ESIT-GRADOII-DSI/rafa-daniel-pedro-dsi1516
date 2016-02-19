@@ -1,12 +1,18 @@
-# Tutorial las Tareas Iniciales
+# Tutorial de las Tareas Iniciales
 
 ## Tabla de Contenido
-1. [Instalar NodeJS](#instalar-nodejs)
-2. [Instalar Express](#instalar-express)
+1. [Instalar Git](#instalar-git)
+2. [Instalar NodeJS](#instalar-nodejs)
+3. [Instalar Express](#instalar-express)
   1. [Instalar el generador de Express](#instalar-el-generador-de-express)
   2. [Instalar Express en nuestro proyecto](#instalar-express-en-nuestro-proyecto)
-3. [Instalar Atom](#instalar-atom)
-4. [Cloud9 IDE](#cloud9-IDE)
+4. [Instalar Atom](#instalar-atom)
+5. [Cloud9 IDE](#cloud9-IDE)
+
+## Instalar Git
+En Ubuntu, se puede instalar Git usando apt
+
+    sudo apt-get install git
 
 ## Instalar NodeJS
 > Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.
@@ -79,4 +85,16 @@ Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) d
 TODO: Captura de Atom
 
 # Cloud9 IDE
-> TODO: terminar esto
+> Cloud9 IDE es un software gratuito online integrado con un entorno de desarrollo. Sporta distintos lenguajes de prgramaión, como PHP, Ruby, Perl, Python, Javascript con Node.js y Go.
+
+TODO: Captura de Cloud9
+
+## Instalar Pandoc
+> Pandoc es una herramienta gratuita y de código abierto que nos permite convertir un lenguaje de marcas (Como Markdown o LaTeX) a otro.
+
+Accedemos al los [releases](https://github.com/jgm/pandoc/releases) del proyecto de github, y descargamos el último paquete .deb y lo instalamos.
+
+    pandoc --version
+    pandoc 1.16.0.2
+    Compiled with texmath 0.8.4.1, highlighting-kate 0.6.1.
+    [...]
