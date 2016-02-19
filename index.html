@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="tutorial-de-las-tareas-iniciales">Tutorial de las Tareas Iniciales</h1>
+<h2 id="tabla-de-contenido">Tabla de Contenido</h2>
+<ol style="list-style-type: decimal">
+<li><a href="#instalar-git">Instalar Git</a></li>
+<li><a href="#instalar-nodejs">Instalar NodeJS</a></li>
+<li><a href="#instalar-express">Instalar Express</a></li>
+<li><a href="#instalar-el-generador-de-express">Instalar el generador de Express</a></li>
+<li><a href="#instalar-express-en-nuestro-proyecto">Instalar Express en nuestro proyecto</a></li>
+<li><a href="#instalar-atom">Instalar Atom</a></li>
+<li><a href="#cloud9-ide">Cloud9 IDE</a></li>
+<li><a href="#instalar-pandoc">Instalar Pandoc</a></li>
+</ol>
+<h2 id="instalar-git">Instalar Git</h2>
+<p>En Ubuntu, se puede instalar Git usando apt</p>
+<pre><code>sudo apt-get install git</code></pre>
+<h2 id="instalar-nodejs">Instalar NodeJS</h2>
+<blockquote>
+<p>Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+</blockquote>
+<p>Hay distintas formas de instalar Node, una de ellas (y posiblemente la más sencilla), es mediante el script <a href="https://github.com/creationix/nvm">nvm</a>. El problema de este script es que es específico de Bash, por lo que si usamos un intéprete distinto (como en mi caso que uso <a href="https://github.com/fish-shell/fish-shell">fish</a> no nos funcionará o tendremos problemas.</p>
+<p>Es por esta razón que al final he decidido descargar el código fuente y compilarlo e instalarlo. A continuación enumero los pasos que he seguido.</p>
+<ol style="list-style-type: decimal">
+<li><p>Descargar el código fuente desde la <a href="https://nodejs.org/en/download/">página de descargas de Node</a></p>
+<pre><code>wget https://nodejs.org/dist/v5.6.0/node-v5.6.0.tar.gz</code></pre></li>
+<li><p>Descomprimir el fichero</p>
+<pre><code>tar xzvf node-v5.6.0.tar.gz</code></pre></li>
+<li><p>Entramos al directorio, ejecutamos el script de configuración, compilamos e instalamos.</p>
+<pre><code>cd node-v5.6.0
+./configure
+make
+sudo make install</code></pre></li>
+<li><p>Al haberlo instalado como superusuario, si deseamos instalar un paquete con npm no podremos ya que el directorio pertenece al usuario root, así que cambiamos e propietario de los directorios a nuestro usuario</p>
+<pre><code>sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modues,bin,share}</code></pre></li>
+<li><p>Una ver arreglado, ya podemos comenzar a usar node y npm.</p>
+<pre><code>node --version
+v5.6.0
+npm --version
+3.6.0</code></pre></li>
+</ol>
+<p>Captura de pantalla con node y npm instalados:</p>
+<div class="figure">
+<img src="images/node-npm.png" />
+
+</div>
+<h2 id="instalar-express">Instalar Express</h2>
+<blockquote>
+<p>Express.js es un framwork para servidores Node.js, diseñado para construir aplicaciones de una página, multiágina, e híbridas.</p>
+</blockquote>
+<p>Express como tal no se puede instalar, lo que se debe hacer es instalarlo como dependencia de nuestro proyecto. Lo que sí podemos instalar de manera global es el generador de Express, que nos sirve para generar un esqueleto que nos sirve como base para poder desarrollar nuestro proyecto.</p>
+<h3 id="instalar-el-generador-de-express">Instalar el generador de Express</h3>
+<p>Instalar el generador sólo requiere de un único comando.</p>
+<pre><code>npm install -g express-generator</code></pre>
+<p>En este punto ya tendremos el generador instalado, por lo que si queremos generar un nuevo proyecto, lo hacemos con el siguiente comando:</p>
+<pre><code>express mi-app</code></pre>
+<div class="figure">
+<img src="images/express-gen.png" />
+
+</div>
+<h3 id="instalar-express-en-nuestro-proyecto">Instalar Express en nuestro proyecto</h3>
+<p>Instalar express con npm es muy sencillo, sólo tenemos que acceder al directorio de nuestro proyecto y ejecutar el siguiente comando:</p>
+<pre><code>npm install express --save-dev</code></pre>
+<p>El parámetro <code>--save-dev</code> añade Express como dependencia del proyecto en el fichero <code>package.json</code>, así que si alguien clona nuestro proyecto, al hacer <code>npm install</code> express también se instalará.</p>
+<div class="figure">
+<img src="images/express-inst.png" />
+
+</div>
+<h2 id="instalar-atom">Instalar Atom</h2>
+<blockquote>
+<p>Atom es un editor de texto de código abierto para OS X, Linux y WIndows con soporte para plugins escritos en Node.js, con un control de Git embebido y desarrollado por Github.</p>
+</blockquote>
+<p>Mi distribución es Ubuntu, así que sólo hay que descargar el paquete (.deb) desde la <a href="https://atom.io/">página de Atom</a> e instalarlo con el administrador de paquetes de Ubuntu.</p>
+<div class="figure">
+<img src="images/atom.png" />
+
+</div>
+<h2 id="cloud9-ide">Cloud9 IDE</h2>
+<blockquote>
+<p>Cloud9 IDE es un software gratuito online integrado con un entorno de desarrollo. Sporta distintos lenguajes de prgramaión, como PHP, Ruby, Perl, Python, Javascript con Node.js y Go.</p>
+</blockquote>
+<div class="figure">
+<img src="images/cloud9.png" />
+
+</div>
+<h2 id="instalar-pandoc">Instalar Pandoc</h2>
+<blockquote>
+<p>Pandoc es una herramienta gratuita y de código abierto que nos permite convertir un lenguaje de marcas (Como Markdown o LaTeX) a otro.</p>
+</blockquote>
+<p>Accedemos al los <a href="https://github.com/jgm/pandoc/releases">releases</a> del proyecto de github, y descargamos el último paquete .deb y lo instalamos.</p>
+<pre><code>pandoc --version
+pandoc 1.16.0.2
+Compiled with texmath 0.8.4.1, highlighting-kate 0.6.1.
+[...]</code></pre>
+<p>Ahora, sólo nos queda generar el fichero HTML con el siguiente comando:</p>
+<pre><code>pandoc -s -o index.html</code></pre>
+</body>
+</html>
