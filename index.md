@@ -103,3 +103,5 @@ Accedemos al los [releases](https://github.com/jgm/pandoc/releases) del proyecto
 Ahora, sólo nos queda generar el fichero HTML con el siguiente comando:
 
     pandoc -s -o index.html
+
+El resultado se puede ver en la rama gh-pages de este repositorio

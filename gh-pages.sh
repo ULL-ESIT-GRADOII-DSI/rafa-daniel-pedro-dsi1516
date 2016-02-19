@@ -30,9 +30,6 @@ pandoc -s -o index.html ../index.md -c style.css
 echo "Copiando imagenes"
 cp -R ../images .
 
-echo "Copiando hoja de estilos"
-cp ../style.css .
-
 echo "Añadiendo al stage"
 git add .
 
