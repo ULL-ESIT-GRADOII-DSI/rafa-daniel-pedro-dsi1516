@@ -126,3 +126,6 @@ Las definiciones están sacadas de la Wikipedia.
 * [Pandoc](https://en.wikipedia.org/wiki/Pandoc)
 
 El template de Pandoc es de [tonyblundell](https://github.com/tonyblundell) y se puede encontrar en [tonyblundell/pandoc-bootstrap-template](https://github.com/tonyblundell/pandoc-bootstrap-template).
+
+## Donde encontrarme
+* [Google+](https://plus.google.com/u/1/113975142899392194596/posts)
