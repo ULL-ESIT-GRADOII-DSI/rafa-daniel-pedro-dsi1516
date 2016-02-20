@@ -54,9 +54,9 @@ Captura de pantalla con node y npm instalados:
 ![](images/node-npm.png)
 
 ## Instalar Express
-> Express.js es un framwork para servidores Node.js, diseñado para construir aplicaciones de una página, multiágina, e híbridas.
+> Express.js es un framework para servidores Node.js, diseñado para construir aplicaciones de una página, multipágina, e híbridas.
 
-Express como tal no se puede instalar, lo que se debe hacer es instalarlo como dependencia de nuestro proyecto. Lo que sí podemos instalar de manera global es el generador de Express, que nos sirve para generar un esqueleto que nos sirve como base para poder desarrollar nuestro proyecto.
+Express como tal no se puede instalar, lo que se debe hacer es instalarlo como dependencia de nuestro proyecto. Lo que sí podemos instalar de manera global es el generador de Express, que nos sirve para generar un esqueleto que podemos usar como base para poder desarrollar nuestro proyecto.
 
 ### Instalar el generador de Express
 
