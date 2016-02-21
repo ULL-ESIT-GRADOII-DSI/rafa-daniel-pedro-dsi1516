@@ -57,13 +57,27 @@ Como en la asignatura se va a utilizar el formato **Markdown**, cabe destacar qu
 ##Cloud9
 **Cloud9** es un IDE online  que permite programar en gran cantidad de lenguajes de programación. Está desarrollado en el lenguajes de programación **Javascript** y para su uso es necesario crearse una cuenta oficial en la plataforma. Además, como posee una consola, es posible acceder a repositorios Github añadiendo primero la clave pública de C9 a nuestra cuenta oficial de **Github**.
 
-![](images/C9/c9_1png)
+![](images/C9/c9_1.png)
 
 Si se dispone de algún proyecto en un repositorio de GitHub se podrá  asociar a **Cloud9** para trabajar en él tan solo creando un “`nuevo workspace`” y añadiendo la url *git* del correspondiente repositorio.
 
 ![](images/C9/c9_2.png)
 
 Además **Cloud9** permite el trabajo en equipo en el IDE añadiendo miembros a tu workspace.
+
+##Pandoc
+**Pandoc** es una aplicación que permite convertir un archivo **Markdown** y lo convierte en formato **Latex**, **HTML**,**PDF** entre otros muchos más formatos. Para la instalación en windows hay que visitar la página oficial y descarga el archivo msi que se encuentra en la pestaña de descargas.
+Para el posterior uso de Pandoc, se deben seguir una serie de pasos:
+Primero  para poder utilizar el comando Pandoc en la consola, se debe realizar el comando que se muestra a continuación:
+
+![](images/Pandoc/pandoc1.png)
+
+A continuación, se debe escribir en la dirección donde se encuentra el archivo.md que procederá a convertir en html el siguiente comando:
+
+![](images/Pandoc/pandoc2.png)
+
+Y finalmente añadir la codificación utf-8 al archivo html para que se muestren bien las tildes y caracteres raros.
+
 
 ## Markdown
 
@@ -98,12 +112,14 @@ Listas
 ```
 
 **Referencias**
+
  Para las definiciones de las herramientas usadas, se ha buscado la información en los siguientes referencias:
- * [NodeJS] (https://www.ibm.com/developerworks/ssa/opensource/library/os-nodejs/)
- * [Nodejs Ubuntu,debian] (https://carlosazaustre.es/blog/como-instalar-node-js-en-ubuntu/)
- * [Atom] (https://en.wikipedia.org/wiki/Atom_(text_editor))
- * [C9] (https://en.wikipedia.org/wiki/Cloud9_IDE)
- * [Markdown] (https://es.wikipedia.org/wiki/Markdown)
+
+ * [NodeJS](https://www.ibm.com/developerworks/ssa/opensource/library/os-nodejs/)
+ * [Nodejs Ubuntu,debian](https://carlosazaustre.es/blog/como-instalar-node-js-en-ubuntu/)
+ * [Atom](https://en.wikipedia.org/wiki/Atom_(text_editor))
+ * [C9](https://en.wikipedia.org/wiki/Cloud9_IDE)
+ * [Markdown](https://es.wikipedia.org/wiki/Markdown)
 
 **Recursos:**
 
