@@ -51,6 +51,10 @@ Donde aparece '$DEB' debemos de poner la ruta de nuestro archivo descargado. Una
 El resulatado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:  
 >pandoc nombrefichero.md  
 
+Las posibilidades que nos brinda Pandoc son inmensas. En nuestro caso, le hemos dado formato al HTML incluyendo un archivo CSS. Si buscamos en Google 'pandoc css markdown' veremos numerosas plantillas de estilos. En nuestro caso hemos utilizado una de [dashed](https://gist.github.com/Dashed/6714393#file-github-pandoc-css).  
+Para obtener la nueva salida, ejecutamos el comando con nuevas opciones:  
+>pandoc -s -S --toc -c pandoc.css index.md -o index.html
+
 ##6. Cloud9
 
 [Cloud9](http://c9.io) es un IDE online gratuito que funciona creando máquinas virtuales para cada uno de nuestros proyectos. Trabaja con numerosos lenguajes de programación, y además es muy sencillo de utilizar.  
