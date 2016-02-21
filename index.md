@@ -21,9 +21,9 @@ Sin embargo, hemos observado que no siempre se nos instala la última versión d
 
 Cambiamos el propietario del directorio de root al nuestro, para evitar futuros problemas:
 
->sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modues,bin,share}  
+>sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}  
 
-![](/images/captura_nodejs.jpg)
+![](/images/captura_nodejs.png)
 Aquí podemos observar las versiones una vez instalado NodeJS
 
 ## 3. Instalar Express
