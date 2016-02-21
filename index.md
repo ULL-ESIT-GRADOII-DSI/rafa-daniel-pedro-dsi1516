@@ -131,4 +131,4 @@ Listas
 * [GitHub Pages](https://pages.github.com/)
 * [Cloud 9 IDE](https://c9.io)
 * [Markdown](http://daringfireball.net/projects/markdown/)
-* [Resultado FInal en HTML](https://github.com/alu0100505078/rafa-daniel-pedro-dsi1516/)
+* [Resultado FInal en HTML](https://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
