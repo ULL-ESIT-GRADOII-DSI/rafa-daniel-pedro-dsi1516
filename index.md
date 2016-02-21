@@ -5,7 +5,28 @@ En nuestro caso utilizamos el sistema operativo Ubuntu, por lo que simplemente a
 
 >sudo apt-get install git
 
-## 2. 
+## 2. Instalar NodeJS
+Para instalar NodeJS, podemos ejecutar directamente los comandos:
+>sudo apt-get install nodejs  
+>sudo apt-get install npm
+
+Sin embargo, hemos observado que no siempre se nos instala la última versión disponible, por lo que obtaremos por utilizar otro método donde nos descargaremos el código fuente, lo compilaremos y lo instalaremos. Esto procedimiento es lento. Estos serían los pasos:
+
+>wget https://nodejs.org/dist/v5.6.0/node-v5.6.0.tar.gz  
+>tar xzvf node-v5.6.0.tar.gz  
+>cd node-v5.6.0  
+>./configure  
+>make  
+>sudo make install  
+
+Cambiamos el propietario del directorio de root al nuestro, para evitar futuros problemas:
+
+>sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modues,bin,share}  
+
+![](/images/captura_nodejs.jpg)
+Aquí podemos observar las versiones una vez instalado NodeJS
+
+## 3. Instalar Express
 
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
