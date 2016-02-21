@@ -23,11 +23,10 @@ Cambiamos el propietario del directorio de root al nuestro, para evitar futuros 
 
 >sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}  
 
-![](/images/captura_nodejs.png)
+![](/images/captura_nodejs.png)  
 Aquí podemos observar las versiones una vez instalado NodeJS
 
 ## 3. Instalar Express
-
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
 
