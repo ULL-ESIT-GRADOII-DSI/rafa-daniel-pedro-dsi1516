@@ -41,6 +41,26 @@ Instalar el editor de texto Atom es muy sencillo en Ubuntu. Visitaremos la pági
 ![](/images/captura_atom.png)  
 El resultado debería ser el que se muestra en la imagen.
 
+##5. Instalar Pandoc
+Para instalar Pandoc, debemos de descargar la última versión del mismo del [paquete de Debian desde la propia página del proyecto en GitHub](https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-1-amd64.deb). Una vez descargado, ejecutamos el comando:
+>ar p $DEB data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local  
+
+Donde aparece '$DEB' debemos de poner la ruta de nuestro archivo descargado. Una vez hecho, comprobaremos que se ha instalado correctamente.  
+
+![](/images/captura_pandoc.png)  
+El resulatado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:  
+>pandoc nombrefichero.md  
+
+##6. Cloud9
+
+[Cloud9](http://c9.io) es un IDE online gratuito que funciona creando máquinas virtuales para cada uno de nuestros proyectos. Trabaja con numerosos lenguajes de programación, y además es muy sencillo de utilizar.  
+Contamos con espacios de trabajo o Workspaces, los cuáles son una máquina virtual distinta cada uno de ellos.  
+Para la creación de uno de ellos, simplemente pulsamos en el botón grande que pone **Create a new workspace**. Para esta asignatura, la configuración debería de ser la siguiente:  
+![](/images/captura_c9.png)  
+Este es el resultado de nuestro espacio de trabajo:  
+![](/images/captura_c9_2.png)  
+
+
 
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
