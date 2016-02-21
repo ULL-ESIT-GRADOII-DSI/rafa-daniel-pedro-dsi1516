@@ -27,6 +27,21 @@ Cambiamos el propietario del directorio de root al nuestro, para evitar futuros 
 Aquí podemos observar las versiones una vez instalado NodeJS
 
 ## 3. Instalar Express
+Para instalar Express nos valdrá con ejecutar únicamente el comando:  
+
+>npm install express --save
+
+![](/images/captura_express.png)  
+Este será el resultado de nuestra terminal cuando ejecutemos dicho comando.
+
+## 4. Instalar Atom
+Instalar el editor de texto Atom es muy sencillo en Ubuntu. Visitaremos la página del editor Atom y nos descargaremos la versión del [paquete de Debian](https://atom.io/download/deb). Una vez descargado, ejecutaremos el siguiente comando que descomprimirá el archivo y lo instalará:  
+>sudo dpkg -i atom-amd64.deb  
+
+![](/images/captura_atom.png)  
+El resultado debería ser el que se muestra en la imagen.
+
+
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
 
