@@ -1,3 +1,12 @@
+# Tutorial en Markdown de las fases iniciales
+
+## 1. Instalar Git
+En nuestro caso utilizamos el sistema operativo Ubuntu, por lo que simplemente abrimos una terminal y ejecutamos el siguiente comando:
+
+>sudo apt-get install git
+
+## 2. 
+
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
 
