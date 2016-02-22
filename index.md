@@ -111,13 +111,10 @@ Listas
 * Lista 2
 ```
 **Donde encontrarme**
-<<<<<<< HEAD
+
 
 * [Google+](https://plus.google.com/u/0/111356122995885561622)
 
-=======
-* [Google+](https://plus.google.com/u/0/111356122995885561622)
->>>>>>> gh-pages
 **Referencias**
 
  Para las definiciones de las herramientas usadas, se ha buscado la información en los siguientes referencias:
@@ -137,8 +134,4 @@ Listas
 * [GitHub Pages](https://pages.github.com/)
 * [Cloud 9 IDE](https://c9.io)
 * [Markdown](http://daringfireball.net/projects/markdown/)
-<<<<<<< HEAD
 * [Resultado Markdown en HTML](http://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
-=======
-* [Resultado FInal en HTML](https://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
->>>>>>> gh-pages
