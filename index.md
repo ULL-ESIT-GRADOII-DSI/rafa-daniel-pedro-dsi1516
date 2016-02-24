@@ -48,7 +48,7 @@ Para instalar Pandoc, debemos de descargar la última versión del mismo del [pa
 Donde aparece '$DEB' debemos de poner la ruta de nuestro archivo descargado. Una vez hecho, comprobaremos que se ha instalado correctamente.  
 
 ![](/images/captura_pandoc.png)  
-El resulatado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:  
+El resultado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:  
     pandoc nombrefichero.md  
 
 Las posibilidades que nos brinda Pandoc son inmensas. En nuestro caso, le hemos dado formato al HTML incluyendo un archivo CSS. Si buscamos en Google 'pandoc css markdown' veremos numerosas plantillas de estilos. En nuestro caso hemos utilizado una de [dashed](https://gist.github.com/Dashed/6714393#file-github-pandoc-css).  

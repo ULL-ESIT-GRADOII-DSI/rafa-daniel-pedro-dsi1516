@@ -54,7 +54,7 @@ El resultado debería ser el que se muestra en la imagen.</p>
 <p>Para instalar Pandoc, debemos de descargar la última versión del mismo del <a href="https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-1-amd64.deb">paquete de Debian desde la propia página del proyecto en GitHub</a>. Una vez descargado, ejecutamos el comando: ar p $DEB data.tar.gz | sudo tar xvz –strip-components 2 -C /usr/local</p>
 <p>Donde aparece ‘$DEB’ debemos de poner la ruta de nuestro archivo descargado. Una vez hecho, comprobaremos que se ha instalado correctamente.</p>
 <p><img src="/images/captura_pandoc.png" /><br />
-El resulatado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:<br />
+El resultado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:<br />
 pandoc nombrefichero.md</p>
 <p>Las posibilidades que nos brinda Pandoc son inmensas. En nuestro caso, le hemos dado formato al HTML incluyendo un archivo CSS. Si buscamos en Google ‘pandoc css markdown’ veremos numerosas plantillas de estilos. En nuestro caso hemos utilizado una de <a href="https://gist.github.com/Dashed/6714393#file-github-pandoc-css">dashed</a>.<br />
 Para obtener la nueva salida, ejecutamos el comando con nuevas opciones:<br />
