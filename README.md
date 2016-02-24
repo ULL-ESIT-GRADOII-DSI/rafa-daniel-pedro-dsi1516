@@ -4,7 +4,6 @@ Configuración de las herramientas y tecnologías a utilizar en la asignatura De
 Práctica en la que se enseña mediante un tutorial la instalación de las diferentes herramientas que se
 utilizarán en la asignatura Desarrollo de Sistemas Informáticos. Las herramientas utilizadas son las siguientes:
 
-
 * NodeJS
 * Express
 * Atom
