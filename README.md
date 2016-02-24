@@ -14,6 +14,6 @@ utilizarán en la asignatura Desarrollo de Sistemas Informáticos. Las herramien
 * Markdown
 * Pandoc
 
-[Página personal de prácticas](http://alu0100505078.github.io/)
-[Página de la asignatura](http://alu0100505078.github.io/portfolio.html)
-[Página de la práctica inicial](http://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
+* [Página personal de prácticas](http://alu0100505078.github.io/)
+* [Página de la asignatura](http://alu0100505078.github.io/portfolio.html)
+* [Página de la práctica inicial](http://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
