@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#tutorial-en-markdown-de-las-fases-iniciales">Tutorial en Markdown de las fases iniciales</a><ul>
+<li><a href="#instalar-git">1. Instalar Git</a></li>
+<li><a href="#instalar-nodejs">2. Instalar NodeJS</a></li>
+<li><a href="#instalar-express">3. Instalar Express</a></li>
+<li><a href="#instalar-atom">4. Instalar Atom</a></li>
+<li><a href="#instalar-pandoc">5. Instalar Pandoc</a></li>
+<li><a href="#cloud9">6. Cloud9</a></li>
+<li><a href="#referencias">Referencias</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="tutorial-en-markdown-de-las-fases-iniciales">Tutorial en Markdown de las fases iniciales</h1>
+<h2 id="instalar-git">1. Instalar Git</h2>
+<p>En nuestro caso utilizamos el sistema operativo Ubuntu, por lo que simplemente abrimos una terminal y ejecutamos el siguiente comando:</p>
+<pre><code>sudo apt-get install git  </code></pre>
+<h2 id="instalar-nodejs">2. Instalar NodeJS</h2>
+<p>Para instalar NodeJS, podemos ejecutar directamente los comandos: sudo apt-get install nodejs<br />
+sudo apt-get install npm</p>
+<p>Sin embargo, hemos observado que no siempre se nos instala la última versión disponible, por lo que obtaremos por utilizar otro método donde nos descargaremos el código fuente, lo compilaremos y lo instalaremos. Esto procedimiento es lento. Estos serían los pasos:</p>
+<pre><code>wget https://nodejs.org/dist/v5.6.0/node-v5.6.0.tar.gz  
+tar xzvf node-v5.6.0.tar.gz  
+cd node-v5.6.0  
+./configure  
+make  
+sudo make install  </code></pre>
+<p>Cambiamos el propietario del directorio de root al nuestro, para evitar futuros problemas:</p>
+<pre><code>sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}  </code></pre>
+<p><img src="/images/captura_nodejs.png" /><br />
+Aquí podemos observar las versiones una vez instalado NodeJS</p>
+<h2 id="instalar-express">3. Instalar Express</h2>
+<p>Para instalar Express nos valdrá con ejecutar únicamente el comando:</p>
+<pre><code>npm install express --save  </code></pre>
+<p><img src="/images/captura_express.png" /><br />
+Este será el resultado de nuestra terminal cuando ejecutemos dicho comando.</p>
+<h2 id="instalar-atom">4. Instalar Atom</h2>
+<p>Instalar el editor de texto Atom es muy sencillo en Ubuntu. Visitaremos la página del editor Atom y nos descargaremos la versión del <a href="https://atom.io/download/deb">paquete de Debian</a>. Una vez descargado, ejecutaremos el siguiente comando que descomprimirá el archivo y lo instalará:<br />
+sudo dpkg -i atom-amd64.deb</p>
+<p><img src="/images/captura_atom.png" /><br />
+El resultado debería ser el que se muestra en la imagen.</p>
+<h2 id="instalar-pandoc">5. Instalar Pandoc</h2>
+<p>Para instalar Pandoc, debemos de descargar la última versión del mismo del <a href="https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-1-amd64.deb">paquete de Debian desde la propia página del proyecto en GitHub</a>. Una vez descargado, ejecutamos el comando: ar p $DEB data.tar.gz | sudo tar xvz –strip-components 2 -C /usr/local</p>
+<p>Donde aparece ‘$DEB’ debemos de poner la ruta de nuestro archivo descargado. Una vez hecho, comprobaremos que se ha instalado correctamente.</p>
+<p><img src="/images/captura_pandoc.png" /><br />
+El resulatado tendría que ser igual al mostrado en la imagen. Utilizamos el siguiente comando para convertir nuestro archivo en Markdown a uno en HTML:<br />
+pandoc nombrefichero.md</p>
+<p>Las posibilidades que nos brinda Pandoc son inmensas. En nuestro caso, le hemos dado formato al HTML incluyendo un archivo CSS. Si buscamos en Google ‘pandoc css markdown’ veremos numerosas plantillas de estilos. En nuestro caso hemos utilizado una de <a href="https://gist.github.com/Dashed/6714393#file-github-pandoc-css">dashed</a>.<br />
+Para obtener la nueva salida, ejecutamos el comando con nuevas opciones:<br />
+pandoc -s -S –toc -c pandoc.css index.md -o index.html</p>
+<h2 id="cloud9">6. Cloud9</h2>
+<p><a href="http://c9.io">Cloud9</a> es un IDE online gratuito que funciona creando máquinas virtuales para cada uno de nuestros proyectos. Trabaja con numerosos lenguajes de programación, y además es muy sencillo de utilizar.<br />
+Contamos con espacios de trabajo o Workspaces, los cuáles son una máquina virtual distinta cada uno de ellos.<br />
+Para la creación de uno de ellos, simplemente pulsamos en el botón grande que pone <strong>Create a new workspace</strong>. Para esta asignatura, la configuración debería de ser la siguiente:<br />
+<img src="/images/captura_c9.png" /><br />
+Este es el resultado de nuestro espacio de trabajo:<br />
+<img src="/images/captura_c9_2.png" /></p>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://git-scm.com/">Git</a><br />
+</li>
+<li><a href="https://github.com/">GitHub</a><br />
+</li>
+<li><a href="https://nodejs.org/en/">NodeJS</a><br />
+</li>
+<li><a href="http://expressjs.com/es/">Express</a><br />
+</li>
+<li><a href="https://atom.io/">Atom</a><br />
+</li>
+<li><a href="http://pandoc.org/">Pandoc</a><br />
+</li>
+<li><a href="https://c9.io">Cloud9</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a><br />
+</li>
+<li><a href="https://github.com/Rafaherrero/rafa-daniel-pedro-dsi1516/blob/master/index.md">Este archivo en Markdown</a><br />
+</li>
+<li><a href="http://rafaherrero.github.io/rafa-daniel-pedro-dsi1516/">Este archivo en HTML</a></li>
+</ul>
+</body>
+</html>
