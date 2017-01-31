@@ -1,5 +1,5 @@
-#Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
-======================================================
+#Tutorial NodeJS, Express, Atom, GitHub, Cloud9 , Markdown y Pandoc
+
 Este tutorial explica los pasos a seguir para instalar las diferentes herramientas que se usarán a lo largo de la asignatura "Desarrollo de Sistemas Informáticos" al igual que muestra capturas de pantallas del uso de las mismas herramientas.
 
 
@@ -110,7 +110,8 @@ Listas
 * Lista 1
 * Lista 2
 ```
-
+**Donde encontrarme**
+* [Google+](https://plus.google.com/u/0/111356122995885561622)
 **Referencias**
 
  Para las definiciones de las herramientas usadas, se ha buscado la información en los siguientes referencias:
@@ -130,3 +131,4 @@ Listas
 * [GitHub Pages](https://pages.github.com/)
 * [Cloud 9 IDE](https://c9.io)
 * [Markdown](http://daringfireball.net/projects/markdown/)
+* [Resultado FInal en HTML](https://alu0100505078.github.io/rafa-daniel-pedro-dsi1516/)
